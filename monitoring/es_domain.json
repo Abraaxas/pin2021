@@ -1,8 +1,8 @@
 {
-    "DomainName": "${ES_DOMAIN_NAME}",
-    "ElasticSearchVersion": "${ES_VERSION}",
-    "ElasticSearchClusterConfig": {
-        "InstanceType": "r5.large.elasticsearch",
+    "DomainName": "eksworkshop-logging",
+    "ElasticsearchVersion": "7.4",
+    "ElasticsearchClusterConfig": {
+        "InstanceType": "t3.small.search",
         "InstanceCount": 1,
             "DedicatedMasterEnabled": false,
             "ZoneAwarenessEnabled": false,
@@ -13,7 +13,7 @@
         "VolumeType": "gp2",
         "VolumeSize": 100
     },
-    "AccessPolicies":  "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:ESHttp*\",\"Resource\":\"arn:aws:es:${AWS_REGION}:${ACCOUNT_ID}:domain/${ES_DOMAIN_NAME}/*\"}]}",
+    "AccessPolicies":  "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"\"},\"Action\":\"es:ESHttp\",\"Resource\":\"arn:aws:es:us-east-2:465468088979:domain/eksworkshop-logging/*\"}]}",
     "SnapshotOptions": {},
     "CognitoOptions": {
         "Enabled": false
