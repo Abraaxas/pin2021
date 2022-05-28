@@ -3,13 +3,13 @@
 
 trigger:
   - main
-  
-  pool:
+
+pool:
     vmImage: ubuntu-latest
   
-  steps:
+steps:
   - task: KubernetesManifest@0
     inputs:
       action: 'deploy'
       kubernetesServiceConnection: 'eks-mundos-e-2'
-      manifests: 'nginx-deployment.yaml'
+      manifests: 'azdo/nginx-deployment.yaml'
