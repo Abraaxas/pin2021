@@ -2,7 +2,7 @@
     "DomainName": "eksworkshop-logging",
     "ElasticsearchVersion": "7.4",
     "ElasticsearchClusterConfig": {
-        "InstanceType": "t3.small.search",
+        "InstanceType": "r5.large.elasticsearch",
         "InstanceCount": 1,
             "DedicatedMasterEnabled": false,
             "ZoneAwarenessEnabled": false,
