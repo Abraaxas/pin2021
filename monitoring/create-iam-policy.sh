@@ -10,7 +10,7 @@ cat <<EoF > ~/environment/logging/fluent-bit-policy.json
 "es:ESHttp*"
 ],
 "Resource":
-"arn:aws:es:us-east-2:465468088979:domain/eksworkshop-logging/*"
+"arn:aws:es:us-east-2:465468088979:domain/eksworkshop-logging/*",
 "Effect": "Allow"
 }
 ]
