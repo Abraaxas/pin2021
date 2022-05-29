@@ -10,7 +10,7 @@ cat <<EoF > ~/environment/logging/fluent-bit-policy.json
 "es:ESHttp*"
 ],
 "Resource":
-"arn:aws:es:${AWS_REGION}:${ACCOUNT_ID}:domain/${ES_DOMAIN_NAME}",
+""arn:aws:es:us-east-2:465468088979:domain/eksworkshop-logging/*\"",
 "Effect": "Allow"
 }
 ]
